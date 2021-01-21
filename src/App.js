@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
         <p>
-          Edit <code>src/App.js</code> and code your webfolio.
+          Edit <code>src/App.js</code> and start to code your webfolio.
         </p>
     </div>
   );
