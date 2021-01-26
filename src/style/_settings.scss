@@ -4,14 +4,15 @@
 }
 @font-face {
   font-family: "font-2";
-  src: url(../fonts/MADE-Cannes.otf);
+  src: url(../fonts/Canvas-Light.otf);
 }
 
 $font-1: "font-1", sans-serif;
 $font-2: "font-2", serif;
 
-$color-1: #001b2e;
-$color-2: #d6dbb2;
+$darkblue-color: #001b2e;
+$sand-color: #d6dbb2;
+$orange-color: #e57a44;
 
 * {
   margin: 0;
@@ -30,15 +31,55 @@ html {
 body {
   font-family: $font-1;
   height: 100vh;
-  background-color: $color-1;
-  color: black;
+  background-color: $darkblue-color;
+  color: $sand-color;
   overflow: hidden;
-  position: relative;
 
   @media screen and (max-width: 430px) {
     position: relative;
     max-width: 100vw;
     overflow-y: initial;
+  }
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+h1 {
+  font-family: $font-2;
+  font-size: 12.2vw;
+  font-weight: 100;
+  font-style: oblique; 
+}
+
+li {
+  color: $sand-color;
+  font-size: 1.4em;
+  
+  &:hover {
+    color: $darkblue-color;
+  }
+}
+
+a {
+  color: $sand-color;
+
+  &:hover {
+    color: $orange-color;
+  }
+}
+
+i {
+  color: $sand-color;
+  font-size: 1.4em;
+  cursor: pointer;
+  font-size: 1em;
+  
+  &:hover {
+    color: $orange-color;
   }
 }
 

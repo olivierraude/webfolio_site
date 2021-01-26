@@ -1,10 +1,14 @@
-import React from 'react';
+import React from "react";
+import Nav from "../components/Nav";
+import SocialMedia from "../components/SocialMedia";
 
 const Contact = () => {
     return (
-        <div>
+        <main>
+            <Nav />
+            <SocialMedia />
             Contact
-        </div>
+        </main>
     );
 };
 
