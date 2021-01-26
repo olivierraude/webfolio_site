@@ -1,0 +1,15 @@
+.main-content {
+    //background-color: red;
+    display: flex;
+    position: relative;
+    top: 30%;
+    justify-content: center;
+}
+
+.title {
+    //display: flex;
+    //background-color: blue;
+    //text-align: center;
+    transform: translateX(-1%);
+    width: 95%;
+}
