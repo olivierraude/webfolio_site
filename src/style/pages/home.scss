@@ -2,7 +2,7 @@
     //background-color: red;
     display: flex;
     position: relative;
-    top: 30%;
+    top: 27%;
     justify-content: center;
 }
 
@@ -11,5 +11,14 @@
     //background-color: blue;
     //text-align: center;
     transform: translateX(-1%);
+    user-select: none;
     width: 95%;
+}
+
+.title p {
+    font-size: 3.09vw;
+    margin-top: -3.5%;
+    text-align: right;
+    user-select: none;
+    width: 98.75%;
 }
