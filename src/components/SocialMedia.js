@@ -28,7 +28,7 @@ const SocialMedia = () => {
           onMouseOver={anim}
         >
           <li>
-            <i class="fab fa-linkedin-in"></i>
+            <i className="fab fa-linkedin-in"></i>
           </li>
         </a>
         <a
@@ -39,7 +39,7 @@ const SocialMedia = () => {
           onMouseOver={anim}
         >
           <li>
-            <i class="fab fa-github"></i>
+            <i className="fab fa-github"></i>
           </li>
         </a>
         <a
@@ -50,7 +50,7 @@ const SocialMedia = () => {
           onMouseOver={anim}
         >
           <li>
-            <i class="fab fa-codepen"></i>
+            <i className="fab fa-codepen"></i>
           </li>
         </a>
       </ul>

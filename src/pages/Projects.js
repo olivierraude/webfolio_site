@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "../components/Nav";
+import Project from "../components/Project";
 import ScrollButton from "../components/ScrollButton";
 import SocialMedia from "../components/SocialMedia";
 
@@ -8,7 +9,7 @@ export const Project1 = () => {
     <main>
       <Nav />
       <SocialMedia />
-      <div classname="project">Projet 1</div>
+      <Project projectNumber={0}/>
       <ScrollButton left="/" right="/project-2"/>
     </main>
   );
@@ -19,7 +20,7 @@ export const Project2 = () => {
     <main>
       <Nav />
       <SocialMedia />
-      <div classname="project">Projet 2</div>
+      <Project projectNumber={1}/>
       <ScrollButton left="/project-1" right="/project-3"/>
     </main>
   );
@@ -30,7 +31,7 @@ export const Project3 = () => {
     <main>
       <Nav />
       <SocialMedia />
-      <div classname="project">Projet 3</div>
+      <Project projectNumber={2}/>
       <ScrollButton left="/project-2" right="/project-4"/>
     </main>
   );
@@ -41,7 +42,7 @@ export const Project4 = () => {
     <main>
       <Nav />
       <SocialMedia />
-      <div classname="project">Projet 4</div>
+      <Project projectNumber={3}/>
       <ScrollButton left="/project-3" right="/project-5"/>
 
     </main>
@@ -53,7 +54,7 @@ export const Project5 = () => {
     <main>
       <Nav />
       <SocialMedia />
-      <div classname="project">Projet 5</div>
+      <Project projectNumber={4}/>
       <ScrollButton left="/project-4" right="/contact"/>
     </main>
   );
