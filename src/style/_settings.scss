@@ -44,7 +44,8 @@ body {
   background-color: $darkblue-color;
   color: $sand-color;
   overflow: hidden;
-
+  cursor: nw-resize;
+  
   @media screen and (max-width: 430px) {
     position: relative;
     max-width: 100vw;

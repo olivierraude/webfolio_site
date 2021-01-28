@@ -11,6 +11,7 @@ import {
 import Contact from "./pages/Contact";
 
 const App = () => {
+
   return (
     <Switch>
       <Route exact path="/" component={Home} />

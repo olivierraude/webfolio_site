@@ -11,7 +11,7 @@ const Nav = () => {
   };
 
   return (
-    <div className="container-corner" onClick={toggle}>
+    <div className="container-corner hover" onClick={toggle}>
       <div className="circle-menu">
         <ul>
           <NavLink

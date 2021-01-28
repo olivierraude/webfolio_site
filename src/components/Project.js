@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { projectsData } from '../data/projectsData';
+//import Site from '../img/stranger_quiz.jpg';
 
 const Project = (props) => {
 
     const [currentProject] = useState(projectsData);
-    const project = currentProject[props.projectNumber]
+    const project = currentProject[props.projectNumber];
 
-    console.log(project.image);
+    const image = project.image;
+    console.log(image)
     return (
         <div className="project-main">
             <div className="project-content">
@@ -25,7 +27,7 @@ const Project = (props) => {
                         <h3>{project.titre}</h3>
                         <p>{project.description}</p>
                     </span>
-                    <img src={project.image} alt={project.titre} />
+                    <img src={project.image} alt={project.titre} className="img" />
                 </div>
             </div>
         </div>
