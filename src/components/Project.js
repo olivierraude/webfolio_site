@@ -13,7 +13,7 @@ const Project = (props) => {
         <div className="project-main">
             <div className="project-content">
                 <h2>{project.titre}</h2>
-                <h3>{project.categorie}</h3>
+                <p>{project.categorie}</p>
 
                 <ul className="languages">
                     {project.languages.map((item) => {
@@ -22,10 +22,10 @@ const Project = (props) => {
                 </ul>
             </div>
             <div className="img-content">
-                <div className="img-container hover">
+                <div className="img-container">
                     <span>
                         <h3>{project.titre}</h3>
-                        <p>{project.description}</p>
+                        <p className="para">{project.description}</p>
                     </span>
                     <img src={project.image} alt={project.titre} className="img" />
                 </div>

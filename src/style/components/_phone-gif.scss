@@ -1,0 +1,39 @@
+.phone-container {
+    position: absolute;
+    width: 30%;
+    bottom: 15%;
+    right: 2%;
+
+    .logos {
+        position: absolute;
+        left: 74%;
+        transform: translate(-50%);
+        width: 70%;
+        top: -130%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    address {
+        position: absolute;
+        right: 10%;
+        top: 75%;
+        text-align: right;
+
+        a {
+            display: block;
+            font-family: $font-2;
+            font-size: 3vw;
+            line-height: 4.5vw;
+            transition:  .4s ease;
+
+            &:hover {
+                color: $sand-color;
+                transform: translateX(-3%);
+                transition:  .4s ease;
+            }
+        }
+    }
+}
