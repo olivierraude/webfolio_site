@@ -10,7 +10,7 @@
     transition-property: background, transform;
     transition: top 160ms ease-out;
     transition: left 160ms ease-out;
-    z-index: 2;
+    z-index: 20;
     backdrop-filter: brightness(115%);
 
     &.hovered {
