@@ -3,12 +3,38 @@ import Mouse from "../components/Mouse";
 import Nav from "../components/Nav";
 import ScrollButton from "../components/ScrollButton";
 import SocialMedia from "../components/SocialMedia";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Home = () => {
+
+const variants = {
+  initial: {
+    opacity: 0,
+    transition: { duration: 0.5 },
+    x: 0,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+  },
+  exit: {
+    opacity: 0,
+    transition: { duration: 0.3 },
+    x: -300
+  }
+};
+
   return (
     <main>
       <Mouse />
-      <div className="home">
+      <AnimatePresence>
+        <motion.div 
+          className="home"
+          initial="initial"
+          animate="visible"
+          exit="exit"
+          variants={variants}
+        >
         <Nav />
         <SocialMedia />
         <div className="main-content">
@@ -18,7 +44,8 @@ const Home = () => {
           </div>
         </div>
         <ScrollButton right="/project-1"/>
-      </div>
+        </motion.div>
+      </AnimatePresence>
     </main>
   );
 };

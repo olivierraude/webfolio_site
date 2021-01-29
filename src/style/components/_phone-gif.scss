@@ -1,12 +1,13 @@
 .phone-container {
     position: absolute;
     width: 30%;
-    bottom: 15%;
+    bottom: 9%;
     right: 2%;
 
     .logos {
+        display: none;
         position: absolute;
-        left: 74%;
+        left: 55%;
         transform: translate(-50%);
         width: 70%;
         top: -130%;

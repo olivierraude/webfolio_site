@@ -4,10 +4,13 @@ const Mouse = () => {
     
     useEffect(() => {
         const cursor = document.querySelector('.cursor');
+        //console.log(cursor)
         
         const handleCursor = (e) => {
             cursor.style.top = e.pageY + "px";
+            //console.log(cursor.style.top)
             cursor.style.left = e.pageX + "px";
+            //console.log(cursor.style.left)
         };
         window.addEventListener('mousemove', handleCursor);
 
