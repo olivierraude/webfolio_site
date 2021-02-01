@@ -6,8 +6,8 @@ const PhoneGif = () => {
             <img src={"img/logos.png"} alt="logos" className="logos" />
             <img src={"img/call-me.gif"} alt="Call-Me" />
             <address>
-                <a href="mailto:olivierraude@gmail.com" className="hover">olivierraude@gmail.com</a>
-                <a href="tel:4389348144" className="hover">438-934-8144</a>
+                <a href="mailto:olivierraude@gmail.com" className="hover hide">olivierraude@gmail.com</a>
+                <a href="tel:4389348144" className="hover hide">438-934-8144</a>
             </address>
         </div>
     );

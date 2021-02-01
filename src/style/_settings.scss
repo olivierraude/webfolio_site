@@ -47,7 +47,8 @@ $shadow: linear-gradient(transparent,transparent,rgba(240, 114, 83, 0.644));
 }
 
 html {
-  scroll-behavior: unset;
+  //scroll-behavior: unset;
+  scroll-behavior: smooth;
 }
 
 body {
