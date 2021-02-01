@@ -35,15 +35,31 @@
         }
 
         h3 {
-            margin-top: -3.5%;
+            margin-top: -3.7%;
         }
         
         &--text {
             display: block;
+            //font-family: Helvetica, sans-serif;
+            font-family: $font-1;
             font-size: 3.55vw;
+            margin: 0;
+            padding: 0;
             text-align: right;
             user-select: none;
             width: 96%;
         }
+
+        /* @supports (-moz-appearance:none) {
+            &--text { 
+                font-size: 3.43vw;
+             } 
+        } */
+
+        @-moz-document url-prefix() { 
+            &--text {
+                font-size: 3.43vw;
+            }
+          }
     }
 }

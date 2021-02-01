@@ -25,6 +25,8 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 100%;
+  -webkit-text-size-adjust: none;
   list-style-type: none;
   outline: none;
   border: none;
@@ -113,6 +115,11 @@ i:hover {
           transform: translateX(-1.3%);
   text-align: center;
   width: 100%;
+  /* @supports (-moz-appearance:none) {
+            &--text { 
+                font-size: 3.43vw;
+             } 
+        } */
 }
 
 .home .title .hide {
@@ -134,18 +141,27 @@ i:hover {
 }
 
 .home .title h3 {
-  margin-top: -3.5%;
+  margin-top: -3.7%;
 }
 
 .home .title--text {
   display: block;
+  font-family: "font-1", sans-serif;
   font-size: 3.55vw;
+  margin: 0;
+  padding: 0;
   text-align: right;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 96%;
+}
+
+@-moz-document url-prefix() {
+  .home .title--text {
+    font-size: 3.43vw;
+  }
 }
 
 .project {
@@ -222,7 +238,7 @@ i:hover {
 .project-content h2 {
   font-family: "font-3", sans-serif;
   font-size: 4vw;
-  line-height: 3.2rem;
+  line-height: 3.5rem;
   margin-bottom: 10px;
   color: #d6dbb2;
   -webkit-transform: scaleX(0);
@@ -321,7 +337,7 @@ i:hover {
 
 @media screen and (max-width: 400px) {
   .img-container {
-    eight: 150px;
+    height: 150px;
     width: 280px;
   }
 }

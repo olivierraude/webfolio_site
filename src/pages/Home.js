@@ -30,6 +30,7 @@ const tl = gsap.timeline({ defaults: { ease: "power1.out" }});
 
 tl.to(".titre", { y: "0%", duration: 2 });
 tl.to(".texte", { y: "0%", duration: 1 }, "-=.75" );
+
 });
 
   return (
@@ -43,6 +44,7 @@ tl.to(".texte", { y: "0%", duration: 1 }, "-=.75" );
           exit="exit"
           variants={variants}
         >
+        
         <Nav />
         <SocialMedia />
         <div className="main-content">

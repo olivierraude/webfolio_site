@@ -9,7 +9,6 @@ import {
   Project5,
 } from "./pages/Projects";
 import Contact from "./pages/Contact";
-//import { AnimatePresence } from "framer-motion";
 
 const App = () => {
   const location = useLocation();
@@ -21,6 +20,10 @@ const App = () => {
       const url = window.location.origin + "/";
 
       const wheelRouter = (after, before) => {
+
+        //console.log(e.wheelDeltaX);
+        //console.log(e.wheelDeltaY);
+
         if(e.wheelDeltaY < 0) {
           setTimeout(() => {
             history.push(after);

@@ -46,7 +46,7 @@
     h2 {
         font-family: $font-3;
         font-size: 4vw;
-        line-height: 3.2rem;
+        line-height: 3.5rem;
         margin-bottom: 10px;
         //font-style: oblique;
         color: $sand-color;
@@ -113,7 +113,7 @@
         width: 370px;
     }
     @media screen and (max-width: 400px){
-        eight: 150px;
+        height: 150px;
         width: 280px
     }
 
