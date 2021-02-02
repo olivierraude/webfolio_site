@@ -4,7 +4,7 @@ export const projectsData = [
         titre : "Site agence",
         categorie : "Programmation",
         languages : ["CSS", "HTML", "WordPress", "ChildTheme", "Cpanel", "Réseau", "SEO"],
-        description : "Mandat de refonte du site de l'agence Continuum-Communication sur Wordpress. Ce projet, réalisé seul, m'a donné l'occasion de pratiquer sur Wordpress, différent plugin et sur un constructeur de thème. J'ai également pu apprendre à migrer correctement un site Wordpress. Le nom de domaine et l'hébergement proviennent de 2 fournisseurs selon le souhait du client, j'ai donc géré le volet hébergement, les routes et redirections, la gestion des DNS (particulièrement pour la prise en charge des emails), enfin j'ai acquis de l'assurance avec CPanel.",
+        description : "Mandat de refonte du site de l'agence Continuum-Communication sur Wordpress. Ce projet m'a donné l'occasion de pratiquer sur Wordpress, différents plugins et sur un constructeur de thème. J'ai également pu apprendre à migrer correctement un site Wordpress. Le nom de domaine et l'hébergement proviennent de 2 fournisseurs, selon le souhait du client, j'ai donc géré le volet hébergement, les routes et redirections, la gestion des DNS (particulièrement pour la prise en charge des emails), enfin j'ai acquis de l'assurance avec CPanel.",
         image : "./img/continuum.jpg",
         lien : "https://www.continuum-communication.com/",
         //github : ""
