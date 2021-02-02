@@ -6,7 +6,7 @@ import {
   Project2,
   Project3,
   Project4,
-  Project5,
+  //Project5,
 } from "./pages/Projects";
 import Contact from "./pages/Contact";
 
@@ -55,16 +55,16 @@ const App = () => {
           wheelRouter('project-4', 'project-2');
           break;
         case url + "project-4":
-          wheelRouter('project-5', 'project-3');
+          wheelRouter('contact', 'project-3');
           break;
-        case url + "project-5":
+        /* case url + "project-5":
           wheelRouter('contact', 'project-4');
-          break;
+          break; */
         case url + "contact" :
           if(e.wheelDeltaY > 0) {
             setTimeout(() => {
-              history.push('project-5');
-            }, 1500);
+              history.push('project-4');
+            }, 750);
           }
           break;
         default:
@@ -82,7 +82,7 @@ const App = () => {
       <Route exact path="/project-2" component={Project2} />
       <Route exact path="/project-3" component={Project3} />
       <Route exact path="/project-4" component={Project4} />
-      <Route exact path="/project-5" component={Project5} />
+      {/* <Route exact path="/project-5" component={Project5} /> */}
       <Route exact path="/contact" component={Contact} />
       <Redirect to="/" />
     </Switch>

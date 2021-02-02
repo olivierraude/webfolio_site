@@ -23,6 +23,7 @@ const Contact = () => {
         ease: [.03,.87,.73,.9],
         duration: .6,
     }
+    
     return (
         <main>
             <Mouse />
@@ -39,7 +40,7 @@ const Contact = () => {
                     <PhoneGif />
                     {/* <IsoCards /> */}
                     <SocialMedia />
-                    <ScrollButton left="/project-5"/>
+                    <ScrollButton left="/project-4"/>
                 </motion.div>
             </AnimatePresence>
         </main>

@@ -76,6 +76,30 @@ const Project = (props) => {
                     <img src={project.image} alt={project.titre} className="img" />
                 </div>
             </motion.div>
+            <div className="project-links">
+                <ul className="content">
+                    <a
+                    href={project.lien}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover"
+                    >
+                    <li>
+                        <i className="fas fa-globe"></i>
+                    </li>
+                    </a>
+                    <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover"
+                    >
+                    <li>
+                        <i className="fab fa-github"></i>
+                    </li>
+                    </a>
+                </ul>
+            </div>
         </motion.div>
         </AnimatePresence>
     );

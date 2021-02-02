@@ -55,13 +55,13 @@ export const Project4 = () => {
         <Nav />
         <SocialMedia />
         <Project projectNumber={3}/>
-        <ScrollButton left="/project-3" right="/project-5"/>
+        <ScrollButton left="/project-3" right="/contact"/>
       </div>
     </main>
   );
 };
 
-export const Project5 = () => {
+/* export const Project5 = () => {
   return (
     <main>
       <Mouse />
@@ -73,4 +73,4 @@ export const Project5 = () => {
       </div>
     </main>
   );
-};
+}; */
