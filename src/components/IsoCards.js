@@ -1,10 +1,12 @@
 import React from 'react';
 
 const IsoCards = () => {
+
+
     return (
         <div className="container">    
             <div className="card-container">
-                <div className="card">
+                <div className="card hover">
                     <div className="imgBx">
                         <img src={"./../../img/eye.svg"} alt="image1" />
                         <h3>L'oeil</h3>
@@ -14,7 +16,7 @@ const IsoCards = () => {
                     </div>
                 </div>
                 
-                <div className="card">
+                <div className="card hover">
                     <div className="imgBx">
                         <img src={"img/skull.svg"} alt="image2" />
                         <h3>La tête</h3>
@@ -24,7 +26,7 @@ const IsoCards = () => {
                     </div>
                 </div>
             
-                <div className="card">
+                <div className="card hover">
                     <div className="imgBx">
                         <img src={"img/heart.svg"} alt="image3" />
                         <h3>Le Coeur</h3>

@@ -17,10 +17,16 @@
   src: url(../fonts/Avenir.ttc);
 }
 
+@font-face {
+  font-family: "font-5";
+  src: url(../fonts/Syne-Regular.ttf);
+}
+
 $font-1: "font-1", sans-serif;
 $font-2: "font-2", serif;
 $font-3: "font-3", sans-serif;
 $font-4: "font-4", sans-serif;
+$font-5: "font-5", sans-serif;
 
 $darkblue-color: #001b2e;
 $sand-color: #d6dbb2;

@@ -5,12 +5,13 @@
     right: 2%;
 
     .logos {
-        display: none;
+        opacity: 0.75;
         position: absolute;
-        left: 55%;
+        left: 4%;
         transform: translate(-50%);
         width: 70%;
-        top: -130%;
+        top: -150%;
+        //animation: fade-in 1.5s ease;
     }
 
     img {
@@ -36,5 +37,23 @@
                 transition:  .4s ease;
             }
         }
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }

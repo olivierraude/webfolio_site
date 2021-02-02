@@ -1,17 +1,17 @@
 .container {
     display: flex;
     justify-content: flex-start;
-    width: 90%;
+    width: 50%;
     height: 100vh;
     
     .card-container {
-        left: 6%;
-        position: absolute;
-        width: 1050px;
+        left: 125px;
+        position: relative;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        top: 65%;
+        top: 40%;
         transform: translateY(-50%) skewY(-10deg);
         
         .card {
@@ -53,7 +53,7 @@
                 transform-origin: left;
                 transform: skewY(45deg);
                 transition: 0.5s; //test: à commenter
-                border-bottom: 200px solid #d9d9d9;
+                border-bottom: 200px solid darken($sand-color, 15);
             }
 
             &:nth-child(1) {
@@ -81,7 +81,7 @@
                 }
 
                 h3 {
-                    color: $h3-color;
+                    color: $darkblue-color;
                     margin-top: 10px;
                     position: relative;
                     text-transform: uppercase;
@@ -89,12 +89,12 @@
             }
 
             .content {
-                background: #fff;
+                background: $sand-color;
                 position: relative;
                 width: 100%;
                 height: 200px;
                 padding: 20px;
-                color: $c-color;
+                color: $darkblue-color;
                 text-align: center;
 
                 &:before {
