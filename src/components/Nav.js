@@ -79,7 +79,7 @@ const Nav = () => {
             className="links-circle hover"
             activeClassName="nav-active"
           >
-            <li>Me, Myself & I</li>
+            <li>À propos</li>
           </NavLink>
         </ul>
       </div>
