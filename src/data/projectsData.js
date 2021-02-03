@@ -17,7 +17,7 @@ export const projectsData = [
         languages : ["Vanilla JS", "modules", "HTML", "SCSS", "SVG"],
         description : "Réalisation d'un quiz en Vanilla Js dans le cadre de ma formation. Ce travail a été réalisé individuellement, j'ai pu approfondir ma connaissance de JavaScript, des classes et de la gestion des modules. Le CSS est codé en SCSS et en respectant la méthode de nommage BEM.",
         image : "./img/stranger_quiz.jpg",
-        lien : "https://www.olivierraude.com/stranger_quiz/",
+        lien : "https://webfolio.olivierraude.com/stranger_quiz/",
         github : "https://github.com/olivierraude/stranger_quiz"
     },
     {
@@ -37,7 +37,7 @@ export const projectsData = [
         languages : ["HTML", "CSS", "Illustrator", "Photoshop"],
         description : "",
         image : './img/email.png',
-        lien : "https://www.olivierraude.com/email/mail.html",
+        lien : "https://webfolio.olivierraude.com/email/mail.html",
         github : "https://github.com/olivierraude/email"
     },
 /*     {
