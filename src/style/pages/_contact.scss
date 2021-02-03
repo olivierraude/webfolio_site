@@ -22,3 +22,14 @@
         transform: translateY(100%);
     }
 } 
+
+@media only screen and (max-width: 480px) {
+    
+    .contact .presentation {
+        width: 85%;
+        font-family: $font-1;
+        font-size: .85em;
+        line-height: 1.5em;
+        margin: 135px 20px;
+    }
+}
