@@ -73,7 +73,7 @@ const Project = (props) => {
                         <h3>{project.titre}</h3>
                         <p className="para">{project.description}</p>
                     </span>
-                    <img src={project.image} alt={project.titre} className="img" />
+                    <img src={project.image} alt={project.alternative} className="img" />
                 </div>
             </motion.div>
             <div className="project-links">

@@ -6,6 +6,7 @@ export const projectsData = [
         languages : ["CSS", "HTML", "WordPress", "ChildTheme", "Cpanel", "Réseau", "SEO"],
         description : "Mandat de refonte du site de l'agence Continuum-Communication sur Wordpress. Ce projet m'a donné l'occasion de pratiquer sur Wordpress, différents plugins et sur un constructeur de thème. J'ai également pu apprendre à migrer correctement un site Wordpress. Gestion du volet hébergement, les routes et redirections, la gestion des DNS (particulièrement pour la prise en charge des emails), assurance avec CPanel.",
         image : "./img/continuum.jpg",
+        alternative : "copie d'écran du projet Continuum",
         lien : "https://www.continuum-communication.com/",
         //github : ""
 
@@ -17,6 +18,7 @@ export const projectsData = [
         languages : ["Vanilla JS", "modules", "HTML", "SCSS", "SVG"],
         description : "Réalisation d'un quiz en Vanilla Js dans le cadre de ma formation. Ce travail a été réalisé individuellement, j'ai pu approfondir ma connaissance de JavaScript, des classes et de la gestion des modules. Le CSS est codé en SCSS et en respectant la méthode de nommage BEM.",
         image : "./img/stranger_quiz.jpg",
+        alternative : "copie d'écran du projet Stranger Quiz",
         lien : "https://webfolio.olivierraude.com/stranger_quiz/",
         github : "https://github.com/olivierraude/stranger_quiz"
     },
@@ -27,6 +29,7 @@ export const projectsData = [
         languages : ["ReactJS", "HTML", "SCSS", "GSAP"],
         description : "Réalisation de mon webfolio en ReactJS. Projet personnel réalisé seul. J'ai pu apprendre ReactJS, les props, useState/useEffect et les components. J'ai aussi découvert plusieurs librairies Javascript pour la gestion des animations comme Framerjs et Gsap. Le code CSS est codé en SCSS et le site est déployé sur le cloud d'AWS via la plateforme Amplify.",
         image : "./img/webfolio.jpg",
+        alternative : "copie d'écran du projet Webfolio",
         //lien : "Vous êtes ici",
         github : "https://github.com/olivierraude/webfolio_site"
     },
@@ -37,6 +40,7 @@ export const projectsData = [
         languages : ["HTML", "CSS", "Illustrator", "Photoshop"],
         description : "Codage d'un email en HTML pour l'agence Continuum-Communication. Réalisation du visuel sur Illustrator et gestion des images sur Photoshop.",
         image : './img/email.png',
+        alternative : "copie d'écran du projet email",
         lien : "https://webfolio.olivierraude.com/email/mail.html",
         github : "https://github.com/olivierraude/email"
     },

@@ -22,15 +22,16 @@
         transform-origin: bottom;
         pointer-events: none;
 
-        @media screen and (max-width: 430px) {
-            transform: rotateX(0deg) scale(1);
-            width: 50px;
+        @media screen and (max-width: 480px) {
+            transform: rotateX(0deg);
+            font-size: 1em;
+            width: 100%;
         }
    
         .left,
         .right {
-            @media screen and (max-width: 430px) {
-                transform: scale(2);
+            @media screen and (max-width: 480px) {
+                font-size: 1.8em;
             }
         }
     
@@ -67,5 +68,11 @@
                 font-size: 2rem;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .scroll-button {
+        bottom: 3%;
     }
 }
