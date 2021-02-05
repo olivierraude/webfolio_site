@@ -6,6 +6,11 @@
     font-size: 1.5rem;
     perspective: 40px;
 
+    @media screen and (max-width: 480px) {
+        
+        margin-bottom: -20px;
+    }
+
     &:hover .sb-main {
         pointer-events: auto;
     }
@@ -22,7 +27,7 @@
         transform-origin: bottom;
         pointer-events: none;
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 768px) {
             transform: rotateX(0deg);
             font-size: 1em;
             width: 100%;
@@ -30,8 +35,8 @@
    
         .left,
         .right {
-            @media screen and (max-width: 480px) {
-                font-size: 1.8em;
+            @media screen and (max-width: 768px) {
+                font-size: 2em;
             }
         }
     
@@ -44,7 +49,7 @@
             grid-area: b;
             user-select: none;
     
-            @media screen and (max-width: 430px) {
+            @media screen and (max-width: 768px) {
                 display: none;
             }
         }
@@ -73,6 +78,6 @@
 
 @media only screen and (max-width: 480px) {
     .scroll-button {
-        bottom: 3%;
+        bottom: 5%;
     }
 }
