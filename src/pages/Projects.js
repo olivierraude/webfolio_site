@@ -1,5 +1,4 @@
 import React from "react";
-import Mouse from "../components/Mouse";
 import Nav from "../components/Nav";
 import Project from "../components/Project";
 import ScrollButton from "../components/ScrollButton";
@@ -8,7 +7,6 @@ import SocialMedia from "../components/SocialMedia";
 export const Project1 = () => {
   return (
     <main>
-      <Mouse />
       <div className="project">
         <Nav />
         <SocialMedia />
@@ -22,7 +20,6 @@ export const Project1 = () => {
 export const Project2 = () => {
   return (
     <main>
-      <Mouse />
       <div className="project">
         <Nav />
         <SocialMedia />
@@ -36,7 +33,6 @@ export const Project2 = () => {
 export const Project3 = () => {
   return (
     <main>
-      <Mouse />
       <div className="project">
         <Nav />
         <SocialMedia />
@@ -50,7 +46,6 @@ export const Project3 = () => {
 export const Project4 = () => {
   return (
     <main>
-      <Mouse />
       <div className="project">
         <Nav />
         <SocialMedia />
