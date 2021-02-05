@@ -23,13 +23,22 @@
     }
 } 
 
+@media only screen and (max-width: 768px) {
+    
+    .contact .presentation {
+        width: 85%;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        margin: 180px 20px;
+    }
+}
+
 @media only screen and (max-width: 480px) {
     
     .contact .presentation {
         width: 85%;
         font-family: $font-1;
         font-size: .85em;
-        line-height: 1.5em;
         margin: 115px 20px;
     }
 }
