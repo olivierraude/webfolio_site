@@ -11,12 +11,16 @@ import gsap from "gsap/gsap-core";
 const Contact = () => {
     const variants = {
         in: {
+            opacity: 0,
+            x: 200
+        },
+        visible:{
             opacity: 1,
             x:0
         },
         out: {
             opacity: 0,
-            x: 800
+            x: -800
         }
     }
 
@@ -37,9 +41,9 @@ const Contact = () => {
             <AnimatePresence>
                 <motion.div 
                     className="contact"
+                    initial="in"
+                    animate="visible"
                     exit="out"
-                    animate="in"
-                    initial="out"
                     variants={variants}
                     transition={transition}
                 >

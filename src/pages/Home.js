@@ -12,7 +12,7 @@ const variants = {
   initial: {
     opacity: 0,
     transition: { duration: 0.5 },
-    x: 0,
+    x: 100,
   },
   visible: {
     opacity: 1,
@@ -21,9 +21,9 @@ const variants = {
   exit: {
     opacity: 0,
     transition: { duration: 0.3 },
-    x: -300
+    x: -100
   }
-};
+}
 
 useEffect(() => {
 const tl = gsap.timeline({ defaults: { ease: "power1.out" }});
@@ -44,7 +44,6 @@ tl.to(".texte", { y: "0%", duration: 1 }, "-=.75" );
           exit="exit"
           variants={variants}
         >
-        
         <Nav />
         <SocialMedia />
         <div className="main-content">
@@ -59,7 +58,7 @@ tl.to(".texte", { y: "0%", duration: 1 }, "-=.75" );
         </div>
         <ScrollButton right="/project-1"/>
         </motion.div>
-      </AnimatePresence>
+        </AnimatePresence>
     </main>
   );
 };

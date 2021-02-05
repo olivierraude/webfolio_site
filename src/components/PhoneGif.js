@@ -1,16 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const PhoneGif = () => {
-
-    useState(() => {
-        
-        const fadeIn = setTimeout(() => {
-            
-            const logos = document.querySelector(".logos");
-            logos.classList.add('fade-in');
-        }, 5000);
-        return () => clearTimeout(fadeIn);
-    }, []);
 
     return (
         <div className="phone-container">

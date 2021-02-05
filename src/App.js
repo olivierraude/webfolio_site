@@ -64,7 +64,7 @@ const App = () => {
           if(e.wheelDeltaY > 0) {
             setTimeout(() => {
               history.push('project-4');
-            }, 750);
+            }, 1500);
           }
           break;
         default:
@@ -76,16 +76,17 @@ const App = () => {
   }, [history]);
 
   return (
-    <Switch location={location} key={location.pathname}>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/project-1" component={Project1} />
-      <Route exact path="/project-2" component={Project2} />
-      <Route exact path="/project-3" component={Project3} />
-      <Route exact path="/project-4" component={Project4} />
-      {/* <Route exact path="/project-5" component={Project5} /> */}
-      <Route exact path="/contact" component={Contact} />
-      <Redirect to="/" />
-    </Switch>
+
+      <Switch location={location} key={location.pathname}>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/project-1" component={Project1} />
+        <Route exact path="/project-2" component={Project2} />
+        <Route exact path="/project-3" component={Project3} />
+        <Route exact path="/project-4" component={Project4} />
+        {/* <Route exact path="/project-5" component={Project5} /> */}
+        <Route exact path="/contact" component={Contact} />
+        <Redirect to="/" />
+      </Switch>
   );
 };
 
