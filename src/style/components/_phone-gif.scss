@@ -1,82 +1,81 @@
 .phone-container {
+  position: absolute;
+  width: 30%;
+  bottom: 9%;
+  right: 2%;
+
+  .logos {
+    opacity: 0.75;
     position: absolute;
-    width: 30%;
-    bottom: 9%;
-    right: 2%;
+    left: 4%;
+    transform: translate(-50%);
+    width: 70%;
+    top: -150%;
+    //animation: fade-in 1.5s ease;
+  }
 
-    .logos {
-        opacity: 0.75;
-        position: absolute;
-        left: 4%;
-        transform: translate(-50%);
-        width: 70%;
-        top: -150%;
-        //animation: fade-in 1.5s ease;
+  img {
+    width: 100%;
+  }
+
+  address {
+    position: absolute;
+    right: 10%;
+    top: 75%;
+    text-align: right;
+
+    a {
+      display: block;
+      font-family: $font-2;
+      font-size: 3vw;
+      line-height: 4.5vw;
+      transition: 0.4s ease;
+
+      &:hover {
+        color: $sand-color;
+        transform: translateX(-3%);
+        transition: 0.4s ease;
+      }
     }
-
-    img {
-        width: 100%;
-    }
-
-    address {
-        position: absolute;
-        right: 10%;
-        top: 75%;
-        text-align: right; 
-
-        a {
-            display: block;
-            font-family: $font-2;
-            font-size: 3vw;
-            line-height: 4.5vw;
-            transition:  .4s ease;
-
-            &:hover {
-                color: $sand-color;
-                transform: translateX(-3%);
-                transition:  .4s ease;
-            }
-        }
-    }
+  }
 }
 
 @keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fade-out {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-    
-    .phone-container {
-        width: 70%;
-        bottom: 10%;
+  .phone-container {
+    width: 70%;
+    bottom: 10%;
 
-        .logos {
-            left: 60%;
-            width: 80%;
-            top: -145%;
-        }
-
-        address {
-            top: 56%;
-            right: 1%;
-            a {
-                font-size: 1.5em;
-                line-height: 1.5em;
-            }
-        }
+    .logos {
+      left: 60%;
+      width: 80%;
+      top: -145%;
     }
+
+    address {
+      top: 56%;
+      right: 1%;
+      a {
+        font-size: 1.5em;
+        line-height: 1.5em;
+      }
+    }
+  }
 }

@@ -1,5 +1,11 @@
 import React, { useEffect } from "react";
-import { Redirect, Route, Switch, useHistory, useLocation } from "react-router-dom";
+import {
+  Redirect,
+  Route,
+  Switch,
+  useHistory,
+  useLocation,
+} from "react-router-dom";
 import Home from "./pages/Home";
 import {
   Project1,
@@ -16,68 +22,64 @@ const App = () => {
   const history = useHistory();
 
   useEffect(() => {
-
     const handleScrollToElement = (e) => {
       const url = window.location.origin + "/";
 
       const wheelRouter = (after, before) => {
-
         //console.log(e.wheelDeltaX);
         //console.log(e.wheelDeltaY);
 
-        if(e.wheelDeltaY < 0) {
+        if (e.wheelDeltaY < 0) {
           setTimeout(() => {
             history.push(after);
           }, 1500);
-        } 
-        else if (e.wheelDeltaY > 0) {
+        } else if (e.wheelDeltaY > 0) {
           setTimeout(() => {
             history.push(before);
           }, 1500);
         }
-      }
+      };
 
       switch (window.location.toString()) {
-
-        case url :
-          if(e.wheelDeltaY < 0) {
+        case url:
+          if (e.wheelDeltaY < 0) {
             setTimeout(() => {
-              history.push('project-1');
+              history.push("project-1");
             }, 1500);
           }
           break;
         case url + "project-1":
-          wheelRouter('project-2', '');
+          wheelRouter("project-2", "");
           break;
         case url + "project-2":
-          wheelRouter('project-3', 'project-1');
+          wheelRouter("project-3", "project-1");
           break;
         case url + "project-3":
-          wheelRouter('project-4', 'project-2');
+          wheelRouter("project-4", "project-2");
           break;
         case url + "project-4":
-          wheelRouter('contact', 'project-3');
+          wheelRouter("contact", "project-3");
           break;
         /* case url + "project-5":
           wheelRouter('contact', 'project-4');
           break; */
-        case url + "contact" :
-          if(e.wheelDeltaY > 0) {
+        case url + "contact":
+          if (e.wheelDeltaY > 0) {
             setTimeout(() => {
-              history.push('project-4');
+              history.push("project-4");
             }, 1500);
           }
           break;
         default:
-          console.log('nothing')
+          console.log("nothing");
       }
     };
 
-    window.addEventListener('wheel', handleScrollToElement)
+    window.addEventListener("wheel", handleScrollToElement);
   }, [history]);
 
   return (
-      <AnimatePresence>
+    <AnimatePresence>
       <Switch location={location} key={location.pathname}>
         <Route exact path="/" component={Home} />
         <Route exact path="/project-1" component={Project1} />
@@ -88,7 +90,7 @@ const App = () => {
         <Route exact path="/contact" component={Contact} />
         <Redirect to="/" />
       </Switch>
-      </AnimatePresence>
+    </AnimatePresence>
   );
 };
 

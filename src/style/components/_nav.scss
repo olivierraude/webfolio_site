@@ -38,7 +38,6 @@
   }
 }
 
-
 .line {
   width: 80%;
   height: 3px;
@@ -156,7 +155,7 @@ ul:hover li:hover {
     perspective: 100px;
 
     li {
-      font-size: .8em;
+      font-size: 0.8em;
       transform: rotateY(30deg) scale(1.2);
       transform-origin: center;
       transition: 0.3s;
@@ -165,9 +164,8 @@ ul:hover li:hover {
 }
 
 @media only screen and (max-width: 480px) {
-  
   .container-corner {
     right: 20px;
     top: 20px;
   }
-} 
+}
