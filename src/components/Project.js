@@ -3,7 +3,6 @@ import { projectsData } from "../data/projectsData";
 import { motion } from "framer-motion";
 
 const Project = (props) => {
-
   const [currentProject] = useState(projectsData);
   const project = currentProject[props.projectNumber];
 
@@ -13,7 +12,7 @@ const Project = (props) => {
       transition: { duration: 0.5 },
       x: 400,
     },
-    visible: { 
+    visible: {
       opacity: 1,
       x: 0,
     },
@@ -21,7 +20,7 @@ const Project = (props) => {
       opacity: 0.4,
       transition: { duration: 0.35 },
       x: -800,
-    }
+    },
   };
 
   // random img pop
@@ -35,17 +34,17 @@ const Project = (props) => {
       x: imgX,
       y: imgY,
     },
-    visible: { 
+    visible: {
       opacity: 1,
       x: 0,
       y: 0,
-    }
-  }
+    },
+  };
 
   const transition = {
-    ease: [.03,.87,.73,.9],
-    duration: .6,
-  }
+    ease: [0.03, 0.87, 0.73, 0.9],
+    duration: 0.6,
+  };
 
   return (
     <motion.div
@@ -56,57 +55,63 @@ const Project = (props) => {
       transition={transition}
       variants={variants}
     >
-    <div className="project-content">
+      <div className="project-content">
         <h2>{project.titre}</h2>
         <p>{project.categorie}</p>
 
         <ul className="languages">
-            {project.languages.map((item) => {
-                return <li key={item}>{item}</li>
-            })}
+          {project.languages.map((item) => {
+            return <li key={item}>{item}</li>;
+          })}
         </ul>
-    </div>
-    <motion.div 
+      </div>
+      <motion.div
         className="img-content"
         initial="initial"
         animate="visible"
         variants={imgAnim}
         transition={{ duration: 1.2 }}
-    >
+      >
         <div className="img-container">
-            <span>
-                <h3>{project.titre}</h3>
-                <p className="para">{project.description}</p>
-            </span>
-            <img src={project.image} alt={project.alternative} width={project.width} height={project.height} className="img" />
+          <span>
+            <h3>{project.titre}</h3>
+            <p className="para">{project.description}</p>
+          </span>
+          <img
+            src={project.image}
+            alt={project.alternative}
+            width={project.width}
+            height={project.height}
+            className="img"
+          />
         </div>
-    </motion.div>
-    <div className="project-links">
+      </motion.div>
+      <div className="project-links">
         <ul className="content">
-            <a
+          <a
             href={project.lien}
             target="_blank"
             rel="noopener noreferrer"
             className="hover"
-            >
+          >
             <li>
-                <i className="fas fa-globe"></i>
+              <i className="fas fa-globe"></i>
             </li>
-            </a>
-            <a
+          </a>
+          <a
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
             className="hover"
-            >
+          >
             <li>
-                <i className="fab fa-github"></i>
+              <i className="fab fa-github"></i>
             </li>
-            </a>
+          </a>
         </ul>
-    </div>
+      </div>
     </motion.div>
-    );
+  );
 };
 
 export default Project;

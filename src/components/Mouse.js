@@ -1,36 +1,34 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
 const Mouse = () => {
-    
-    useEffect(() => {
-        const cursor = document.querySelector('.cursor');
-        //console.log(cursor)
-        
-        const handleCursor = (e) => {
-            cursor.style.top = e.pageY + "px";
-            //console.log(cursor.style.top)
-            cursor.style.left = e.pageX + "px";
-            //console.log(cursor.style.left)
-        };
-        window.addEventListener('mousemove', handleCursor);
+  useEffect(() => {
+    const cursor = document.querySelector(".cursor");
+    //console.log(cursor)
 
-        const handleHover = () => {
-            cursor.classList.add('hovered');
-        }
-        
-        const handleLeave = () => {
-            cursor.style.transition = ".3s ease-out";
-            cursor.classList.remove('hovered');
-        }
+    const handleCursor = (e) => {
+      cursor.style.top = e.pageY + "px";
+      //console.log(cursor.style.top)
+      cursor.style.left = e.pageX + "px";
+      //console.log(cursor.style.left)
+    };
+    window.addEventListener("mousemove", handleCursor);
 
-        document.querySelectorAll('.hover').forEach((link) => {
-            link.addEventListener('mouseover', handleHover);
-            link.addEventListener('mouseleave', handleLeave);
-        })
+    const handleHover = () => {
+      cursor.classList.add("hovered");
+    };
 
-    }, []);
+    const handleLeave = () => {
+      cursor.style.transition = ".3s ease-out";
+      cursor.classList.remove("hovered");
+    };
 
-    return <span className="cursor"></span>;
+    document.querySelectorAll(".hover").forEach((link) => {
+      link.addEventListener("mouseover", handleHover);
+      link.addEventListener("mouseleave", handleLeave);
+    });
+  }, []);
+
+  return <span className="cursor"></span>;
 };
 
 export default Mouse;

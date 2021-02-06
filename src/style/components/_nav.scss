@@ -4,10 +4,9 @@
   top: 30px;
 
   @media only screen and (max-width: 480px) {
-
-      right: 20px;
-      top: 20px;
-  } 
+    right: 20px;
+    top: 20px;
+  }
 }
 
 .btn-circle {
@@ -43,7 +42,6 @@
     transition: top 0.2s ease 0.2s, transform 0.2s ease 0.2s;
   }
 }
-
 
 .line {
   width: 80%;
@@ -160,20 +158,18 @@ ul:hover li:hover {
     transition: 0.3s;
     perspective: 100px;
 
-
-  @media only screen and (max-width: 768px) {
-    visibility: visible;
-    opacity: 1;
-  }
+    @media only screen and (max-width: 768px) {
+      visibility: visible;
+      opacity: 1;
+    }
 
     li {
-      font-size: .8em;
+      font-size: 0.8em;
       transform: rotateY(30deg) scale(1.2);
       transform-origin: center;
       transition: 0.3s;
 
       @media only screen and (max-width: 768px) {
-
         transform: rotateY(0deg);
       }
     }
