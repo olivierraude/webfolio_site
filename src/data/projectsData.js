@@ -45,7 +45,7 @@ export const projectsData = [
         categorie : "Programmation",
         languages : ["HTML", "CSS", "Illustrator", "Photoshop"],
         description : "Codage d'un email en HTML pour l'agence Continuum-Communication. Réalisation du visuel sur Illustrator et gestion des images sur Photoshop.",
-        image : './img/email.png',
+        image : './img/email.jpg',
         alternative : "copie d'écran du projet email",
         width : "800",
         height : "396",
