@@ -48,7 +48,7 @@ const Contact = () => {
             <div className="presentation-text">
               <p className="hide">
                 <span className="text">
-                  Développeur Front-End Junior basé à Montréal.
+                  Développeur Front-End basé à Montréal.
                 </span>
               </p>
               <p className="hide">
