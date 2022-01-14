@@ -23,6 +23,20 @@ export const projectsData = [
   },
   {
     id: 2,
+    titre: "Kaliop",
+    categorie: "Programmation",
+    languages: ["HTML", "CSS", "JavaScript", "Parcel"],
+    description:
+      "Intégration d'une maquette en HTML, CSS et JavaScript en 24h pour l'agence Kaliop. Réalisation du projet avec le bundler Parcel.",
+    image: "./img/test_kaliop.jpg",
+    alternative: "copie d'écran du projet test",
+    width: "1920",
+    height: "950",
+    lien: "https://webfolio.olivierraude.com/test_kaliop/",
+    github: "https://github.com/olivierraude/email",
+  },
+  {
+    id: 3,
     titre: "Stranger Quiz",
     categorie: "Programmation",
     languages: ["Vanilla JS", "modules", "HTML", "SCSS", "SVG"],
@@ -36,7 +50,7 @@ export const projectsData = [
     github: "https://github.com/olivierraude/stranger_quiz",
   },
   {
-    id: 3,
+    id: 4,
     titre: "Webfolio",
     categorie: "Programmation",
     languages: ["ReactJS", "HTML", "SCSS", "GSAP"],
@@ -48,20 +62,6 @@ export const projectsData = [
     height: "950",
     //lien : "Vous êtes ici",
     github: "https://github.com/olivierraude/webfolio_site",
-  },
-  {
-    id: 4,
-    titre: "Mail HTML",
-    categorie: "Programmation",
-    languages: ["HTML", "CSS", "Illustrator", "Photoshop"],
-    description:
-      "Codage d'un email en HTML pour l'agence Continuum-Communication. Réalisation du visuel sur Illustrator et gestion des images sur Photoshop.",
-    image: "./img/email.jpg",
-    alternative: "copie d'écran du projet email",
-    width: "1920",
-    height: "950",
-    lien: "https://webfolio.olivierraude.com/email/mail.html",
-    github: "https://github.com/olivierraude/email",
   },
   /*     {
         id : 5,
