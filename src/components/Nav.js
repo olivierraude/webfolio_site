@@ -62,14 +62,14 @@ const Nav = () => {
                 <li>Projet 4</li>
               </NavLink>
 
-              {/*               <NavLink
+              <NavLink
                 to="/project-5"
                 exact
                 className="links-projects hover"
                 activeClassName="nav-active"
               >
                 <li>Projet 5</li>
-              </NavLink> */}
+              </NavLink>
             </ul>
           </li>
 

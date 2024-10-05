@@ -3,21 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "emailjs-com": "^2.6.3",
+    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/react": "^15.0.7",
+    "@testing-library/user-event": "^14.5.2",
+    "emailjs-com": "^3.2.0",
     "file-loader": "^6.2.0",
-    "framer-motion": "^2.1.4",
-    "gsap": "^3.6.0",
+    "framer-motion": "^11.2.10",
+    "gsap": "^3.12.5",
     "package.json": "^2.0.1",
-    "react": "^16.13.1",
-    "react-copy-to-clipboard": "^5.0.2",
-    "react-dom": "^16.13.1",
-    "react-image": "^4.0.3",
-    "react-router": "^5.2.0",
+    "react": "^18.3.1",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "^18.3.1",
+    "react-image": "^4.1.0",
+    "react-router": "^6.23.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^5.0.1",
     "url-loader": "^4.1.1",
     "websocket-extensions": "^0.1.4"
   },
@@ -43,6 +43,6 @@
     ]
   },
   "devDependencies": {
-    "node-sass": "^4.14.1"
+    "node-sass": "^9.0.0"
   }
 }
