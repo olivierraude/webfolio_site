@@ -48,7 +48,7 @@ const Contact = () => {
             <div className="presentation-text">
               <p className="hide">
                 <span className="text">
-                  Développeur Front-End basé à Montréal.
+                  Développeur basé à Montréal.
                 </span>
               </p>
               <p className="hide">
@@ -72,7 +72,7 @@ const Contact = () => {
           <PhoneGif />
           {/* <IsoCards /> */}
           <SocialMedia />
-          <ScrollButton left="/project-5" />
+          <ScrollButton left="/project-8" />
         </motion.div>
       </AnimatePresence>
     </main>

@@ -70,6 +70,30 @@ const Nav = () => {
               >
                 <li>Projet 5</li>
               </NavLink>
+              <NavLink
+                to="/project-6"
+                exact
+                className="links-projects hover"
+                activeClassName="nav-active"
+              >
+                <li>Projet 6</li>
+              </NavLink>
+              <NavLink
+                to="/project-7"
+                exact
+                className="links-projects hover"
+                activeClassName="nav-active"
+              >
+                <li>Projet 7</li>
+              </NavLink>
+              <NavLink
+                to="/project-8"
+                exact
+                className="links-projects hover"
+                activeClassName="nav-active"
+              >
+                <li>Projet 8</li>
+              </NavLink>
             </ul>
           </li>
 

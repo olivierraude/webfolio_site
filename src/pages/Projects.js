@@ -69,8 +69,51 @@ export const Project5 = () => {
         <Nav />
         <SocialMedia />
         <Project projectNumber={4}/>
-        <ScrollButton left="/project-4" right="/contact"/>
+        <ScrollButton left="/project-4" right="/project-6"/>
       </div>
     </main>
   );
 };
+
+export const Project6 = () => {
+  return (
+    <main>
+      <Mouse />
+      <div className="project">
+        <Nav />
+        <SocialMedia />
+        <Project projectNumber={5}/>
+        <ScrollButton left="/project-5" right="/project-7"/>
+      </div>
+    </main>
+  );
+};
+
+export const Project7 = () => {
+  return (
+    <main>
+      <Mouse />
+      <div className="project">
+        <Nav />
+        <SocialMedia />
+        <Project projectNumber={6}/>
+        <ScrollButton left="/project-6" right="/contact"/>
+      </div>
+    </main>
+  );
+};
+
+export const Project8 = () => {
+  return (
+    <main>
+      <Mouse />
+      <div className="project">
+        <Nav />
+        <SocialMedia />
+        <Project projectNumber={7}/>
+        <ScrollButton left="/project-7" right="/contact"/>
+      </div>
+    </main>
+  );
+};
+

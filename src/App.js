@@ -7,6 +7,9 @@ import {
   Project3,
   Project4,
   Project5,
+  Project6,
+  Project7,
+  Project8,
 } from "./pages/Projects";
 import Contact from "./pages/Contact";
 
@@ -55,15 +58,24 @@ const App = () => {
           wheelRouter('project-4', 'project-2');
           break;
         case url + "project-4":
-          wheelRouter('contact', 'project-3');
+          wheelRouter('project-5', 'project-3');
           break;
         case url + "project-5":
-          wheelRouter('contact', 'project-4');
+          wheelRouter('project-6', 'project-4');
+          break;
+        case url + "project-6":
+          wheelRouter('project-7', 'project-5');
+          break;
+        case url + "project-7":
+          wheelRouter('project-8', 'project-6');
+          break;
+        case url + "project-8":
+          wheelRouter('contact', 'project-7');
           break;
         case url + "contact" :
           if(e.wheelDeltaY > 0) {
             setTimeout(() => {
-              history.push('project-5');
+              history.push('project-7');
             }, 750);
           }
           break;
@@ -83,6 +95,9 @@ const App = () => {
       <Route exact path="/project-3" component={Project3} />
       <Route exact path="/project-4" component={Project4} />
       <Route exact path="/project-5" component={Project5} />
+      <Route exact path="/project-6" component={Project6} />
+      <Route exact path="/project-7" component={Project7} />
+      <Route exact path="/project-8" component={Project8} />
       <Route exact path="/contact" component={Contact} />
       <Redirect to="/" />
     </Switch>
