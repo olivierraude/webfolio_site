@@ -95,11 +95,11 @@ export const projectsData = [
   },
    {
      id: 8,
-     titre: "Script de lancement projet",
+     titre: "Automatisation de processus",
      categorie: "Script Bash",
      languages: ["Bash", "Git", "Composer", "NodeJS", "Gulp"],
      description:
-       "Création d’un script d’installation de mes nouveaux projets. Le script appelle un dossier boilerplate hébergé sur Github contenant la base du projet, le child theme, le fichier wp-content avec les plugins, fichier gulpfile.js, le composer.json… Au lancement du script, je rentre les données nécessaires pour la création d’un projet prêt au développement avec création de la base de données, sass, minification du CSS et JS dans un dossier dist/ et autoreload à chaque enregistrement des modifications dans l'ide.",
+       "Création d’un script d’installation des nouveaux projets WP. Le script appelle un dossier boilerplate hébergé sur Github contenant la base du projet, le child theme, le fichier wp-content avec les plugins, fichier gulpfile.js, le composer.json… Au lancement du script, je rentre les données nécessaires pour la création d’un projet prêt au développement avec création de la base de données, sass, minification du CSS et JS dans un dossier dist/ et autoreload à chaque enregistrement des modifications dans l'ide.",
      image: "./img/script-install.webp",
      alternative: "copie d'écran de l'ide Script de lancement nouveau projet",
      width: "1920",

@@ -97,7 +97,7 @@ export const Project7 = () => {
         <Nav />
         <SocialMedia />
         <Project projectNumber={6}/>
-        <ScrollButton left="/project-6" right="/contact"/>
+        <ScrollButton left="/project-6" right="/project-8"/>
       </div>
     </main>
   );
