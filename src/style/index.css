@@ -186,7 +186,7 @@ i:hover {
 }
 @media screen and (max-width: 480px) {
   .project-main {
-    margin: 35% 1rem 0;
+    margin: 30% 1rem 0;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
@@ -200,6 +200,7 @@ i:hover {
   .project-content {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     padding: 0 0.5rem;
     width: 100%;
   }
@@ -219,7 +220,6 @@ i:hover {
     font-size: 1.5rem;
     line-height: 1.5rem;
     text-align: left;
-    margin-bottom: 90px;
   }
 }
 @keyframes transformTitle {
@@ -237,8 +237,6 @@ i:hover {
 @media screen and (max-width: 480px) {
   .project-content p {
     font-size: 1.2rem;
-    margin-top: 20px;
-    margin-left: -260px;
   }
 }
 .project-content li {
@@ -284,6 +282,11 @@ i:hover {
   overflow: hidden;
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  .img-container {
+    margin-top: 2em;
+  }
+}
 .img-container:hover span,
 .img-container span:hover {
   visibility: visible;
@@ -320,6 +323,7 @@ i:hover {
 }
 @media screen and (max-width: 480px) {
   .img-container span {
+    width: 100%;
     bottom: 5px;
     padding: 0.5rem;
   }
@@ -336,8 +340,8 @@ i:hover {
 }
 @media screen and (max-width: 480px) {
   .img-container span p {
-    font-size: 0.7rem;
-    line-height: 1.1rem;
+    font-size: 0.6rem;
+    line-height: 0.8rem;
     margin-bottom: 0;
   }
 }
@@ -376,6 +380,7 @@ i:hover {
     width: 85%;
     font-family: "font-1", sans-serif;
     font-size: 0.85em;
+    font-size: 0.9em;
     margin: 115px 20px;
   }
 }

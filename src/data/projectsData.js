@@ -82,7 +82,7 @@ export const projectsData = [
    {
      id: 7,
      titre: "Stranger Quiz App",
-     categorie: "Programmation application",
+     categorie: "Programmation",
      languages: ["Vanilla JS", "modules", "HTML", "SCSS", "SVG"],
      description:
        "Réalisation d'un quiz en Vanilla Js dans le cadre de ma formation. Ce travail a été réalisé individuellement, j'ai pu approfondir ma connaissance de JavaScript, des classes, de la gestion des modules et l’animation de SVG et de particules. Le CSS est codé en SCSS et en respectant la méthode de nommage BEM.",
@@ -95,7 +95,7 @@ export const projectsData = [
   },
    {
      id: 8,
-     titre: "Script de lancement nouveau projet",
+     titre: "Script de lancement projet",
      categorie: "Script Bash",
      languages: ["Bash", "Git", "Composer", "NodeJS", "Gulp"],
      description:
