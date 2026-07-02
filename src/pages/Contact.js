@@ -65,7 +65,7 @@ const Contact = () => {
                 <span className="text">fluides et jolies pour les yeux.</span>
               </p>
               <p className="hide">
-                <span className="text">Fan de design et d'équipe!</span>
+                <span className="text">Fan d'ergonomie et d'équipe!</span>
               </p>
             </div>
           </div>
