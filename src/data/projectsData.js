@@ -1,6 +1,58 @@
 export const projectsData = [
   {
     id: 1,
+    titre: "Art Massif",
+    categorie: "Programmation site web",
+    languages: [
+      "WordPress",
+      "PHP",
+      "CPT UI",
+      "ACF",
+      "SCSS",
+      "GSAP",
+      "Vanilla JS",
+      "Gulp",
+      "Composer",
+      "NodeJS",
+      "Elementor Pro",
+      "SEO",
+    ],
+    description:
+      "Réalisation d'un site web responsive, thème personnalisé, CSS est codé en SCSS et en respectant la méthode de nommage BEM, animations réalisées avec GSAP et gestion des données dynamiques avec CPT UI et ACF. Site FR/EN réalisé pour l'agence de placement média Projetdekip Media à Montréal.",
+    image: "./img/artmassif.webp",
+    alternative: "copie d'écran de la page d'accueil du projet Art Massif",
+    width: "1920",
+    height: "950",
+    lien: "https://www.artmassif.ca/",
+  },
+  {
+    id: 2,
+    titre: "Avenir Franchise",
+    categorie: "Programmation site web",
+    languages: [
+      "WordPress",
+      "PHP",
+      "CPT UI",
+      "ACF",
+      "SCSS",
+      "GSAP",
+      "Vanilla JS",
+      "Gulp",
+      "Composer",
+      "NodeJS",
+      "Elementor Pro",
+      "SEO",
+    ],
+    description:
+      "Réalisation d'un site web responsive, thème personnalisé, CSS est codé en SCSS et en respectant la méthode de nommage BEM, animations réalisées avec GSAP et gestion des données dynamiques avec CPT UI et ACF. Site FR/EN réalisé pour l'agence de placement média Projetdekip Media à Montréal.",
+    image: "./img/avenirfranchise.webp",
+    alternative: "copie d'écran de la page d'accueil du projet Avenir Franchise",
+    width: "1920",
+    height: "950",
+    lien: "https://avenir-franchise.ca/",
+  },
+  {
+    id: 3,
     titre: "Projetdekip Média",
     categorie: "Programmation site web",
     languages: [
@@ -26,7 +78,7 @@ export const projectsData = [
     lien: "https://www.projetdekip.com/",
   },
   {
-    id: 2,
+    id: 4,
     titre: "Franchise Restauration",
     categorie: "Programmation site web",
     languages: [
@@ -50,7 +102,7 @@ export const projectsData = [
     lien: "https://franchise-restauration.ca/",
   },
   {
-    id: 3,
+    id: 5,
     titre: "Construction Hébert & Hébert",
     categorie: "Programmation site web",
     languages: [
@@ -76,7 +128,7 @@ export const projectsData = [
     lien: "https://constructionheberthebert.ca/",
   },
   {
-    id: 4,
+    id: 6,
     titre: "Propolys - Polymtl",
     categorie: "Programmation site web",
     languages: [
@@ -103,7 +155,7 @@ export const projectsData = [
     github: "",
   },
   {
-    id: 5,
+    id: 7,
     titre: "Pizzeria Ty Birill",
     categorie: "Programmation site web",
     languages: [
@@ -126,12 +178,12 @@ export const projectsData = [
     github: "https://github.com/olivierraude/wordpress-tybirill",
   },
   {
-    id: 6,
+    id: 8,
     titre: "Webfolio",
     categorie: "Programmation site web",
-    languages: ["ReactJS", "HTML", "SCSS", "GSAP"],
+    languages: ["ReactJS", "HTML", "SCSS", "GSAP", "CI/CD"],
     description:
-      "Réalisation de mon webfolio en ReactJS. Apprentissage de ReactJS, des props, useState/useEffect, des components et création et gestion de l’environnement de développement. J'ai aussi découvert plusieurs librairies Javascript pour la gestion des animations comme Framerjs et Gsap. Le style est codé en SCSS et le site a été déployé originellement sur le cloud d'AWS via la plateforme Amplify, aujourd’hui sur Hostinger.",
+      "Réalisation de mon webfolio en ReactJS. Apprentissage de ReactJS, des props, useState/useEffect, des components, création et gestion de l’environnement de développement. J'ai aussi découvert plusieurs librairies Javascript pour la gestion des animations comme Framerjs et Gsap. Le style est codé en SCSS et le site a été déployé originellement sur le cloud d'AWS via la plateforme Amplify, aujourd’hui sur Hostinger.",
     image: "./img/webfolio.webp",
     alternative: "copie d'écran du projet Webfolio",
     width: "1920",
@@ -140,7 +192,7 @@ export const projectsData = [
     github: "https://github.com/olivierraude/webfolio_site",
   },
   {
-    id: 7,
+    id: 9,
     titre: "Stranger Quiz App",
     categorie: "Programmation",
     languages: ["Vanilla JS", "modules", "HTML", "SCSS", "SVG"],
@@ -154,7 +206,7 @@ export const projectsData = [
     github: "https://github.com/olivierraude/stranger_quiz",
   },
   {
-    id: 8,
+    id: 10,
     titre: "Automatisation de processus",
     categorie: "Script Bash",
     languages: ["Bash", "Git", "Composer", "NodeJS", "Gulp"],

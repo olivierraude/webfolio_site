@@ -10,6 +10,8 @@ import {
   Project6,
   Project7,
   Project8,
+  Project9,
+  Project10,
 } from "./pages/Projects";
 import Contact from "./pages/Contact";
 
@@ -40,47 +42,52 @@ const App = () => {
       }
 
       switch (window.location.toString()) {
-
-        case url :
-          if(e.wheelDeltaY < 0) {
+        case url:
+          if (e.wheelDeltaY < 0) {
             setTimeout(() => {
-              history.push('project-1');
+              history.push("project-1");
             }, 1500);
           }
           break;
         case url + "project-1":
-          wheelRouter('project-2', '');
+          wheelRouter("project-2", "");
           break;
         case url + "project-2":
-          wheelRouter('project-3', 'project-1');
+          wheelRouter("project-3", "project-1");
           break;
         case url + "project-3":
-          wheelRouter('project-4', 'project-2');
+          wheelRouter("project-4", "project-2");
           break;
         case url + "project-4":
-          wheelRouter('project-5', 'project-3');
+          wheelRouter("project-5", "project-3");
           break;
         case url + "project-5":
-          wheelRouter('project-6', 'project-4');
+          wheelRouter("project-6", "project-4");
           break;
         case url + "project-6":
-          wheelRouter('project-7', 'project-5');
+          wheelRouter("project-7", "project-5");
           break;
         case url + "project-7":
-          wheelRouter('project-8', 'project-6');
+          wheelRouter("project-8", "project-6");
           break;
         case url + "project-8":
-          wheelRouter('contact', 'project-7');
+          wheelRouter("project-9", "project-7");
           break;
-        case url + "contact" :
-          if(e.wheelDeltaY > 0) {
+        case url + "project-9":
+          wheelRouter("project-10", "project-8");
+          break;
+        case url + "project-10":
+          wheelRouter("contact", "project-9");
+          break;
+        case url + "contact":
+          if (e.wheelDeltaY > 0) {
             setTimeout(() => {
-              history.push('project-7');
+              history.push("project-10");
             }, 750);
           }
           break;
         default:
-          console.log('nothing')
+          console.log("nothing");
       }
     };
 
@@ -98,6 +105,8 @@ const App = () => {
       <Route exact path="/project-6" component={Project6} />
       <Route exact path="/project-7" component={Project7} />
       <Route exact path="/project-8" component={Project8} />
+      <Route exact path="/project-9" component={Project9} />
+      <Route exact path="/project-10" component={Project10} />
       <Route exact path="/contact" component={Contact} />
       <Redirect to="/" />
     </Switch>

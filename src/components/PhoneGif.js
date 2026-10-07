@@ -17,7 +17,7 @@ const PhoneGif = () => {
     <div className="phone-container">
       <img
         ref={logoRef}
-        src="img/logos.png"
+        src="img/logos.webp"
         alt="Groupe de logos des langages informatiques"
         className="logos"
       />
@@ -26,8 +26,8 @@ const PhoneGif = () => {
         <a href="mailto:olivierraude@gmail.com" className="hover mail">
           olivierraude@gmail.com
         </a>
-        <a href="tel:4389348144" className="hover phone">
-          438-934-8144
+        <a href="tel:0675356615" className="hover phone">
+          06-75-35-66-15
         </a>
       </address>
     </div>

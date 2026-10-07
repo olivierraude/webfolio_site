@@ -14,12 +14,7 @@ const Nav = () => {
     <div className="container-corner hover" onClick={toggle}>
       <div className="circle-menu">
         <ul>
-          <NavLink
-            to="/"
-            exact
-            className="links-circle hover"
-            activeClassName="nav-active"
-          >
+          <NavLink to="/" exact className="links-circle hover" activeClassName="nav-active">
             <li>Accueil</li>
           </NavLink>
 
@@ -94,15 +89,26 @@ const Nav = () => {
               >
                 <li>Projet 8</li>
               </NavLink>
+              <NavLink
+                to="/project-9"
+                exact
+                className="links-projects hover"
+                activeClassName="nav-active"
+              >
+                <li>Projet 9</li>
+              </NavLink>
+              <NavLink
+                to="/project-10"
+                exact
+                className="links-projects hover"
+                activeClassName="nav-active"
+              >
+                <li>Projet 10</li>
+              </NavLink>
             </ul>
           </li>
 
-          <NavLink
-            to="/contact"
-            exact
-            className="links-circle hover"
-            activeClassName="nav-active"
-          >
+          <NavLink to="/contact" exact className="links-circle hover" activeClassName="nav-active">
             <li>À propos</li>
           </NavLink>
         </ul>

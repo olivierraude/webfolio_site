@@ -110,8 +110,36 @@ export const Project8 = () => {
       <div className="project">
         <Nav />
         <SocialMedia />
-        <Project projectNumber={7}/>
-        <ScrollButton left="/project-7" right="/contact"/>
+        <Project projectNumber={7} />
+        <ScrollButton left="/project-7" right="/project-9" />
+      </div>
+    </main>
+  );
+};
+
+export const Project9 = () => {
+  return (
+    <main>
+      <Mouse />
+      <div className="project">
+        <Nav />
+        <SocialMedia />
+        <Project projectNumber={8} />
+        <ScrollButton left="/project-8" right="/project-10" />
+      </div>
+    </main>
+  );
+};
+
+export const Project10 = () => {
+  return (
+    <main>
+      <Mouse />
+      <div className="project">
+        <Nav />
+        <SocialMedia />
+        <Project projectNumber={9} />
+        <ScrollButton left="/project-9" right="/contact" />
       </div>
     </main>
   );

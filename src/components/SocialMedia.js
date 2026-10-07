@@ -42,7 +42,7 @@ const SocialMedia = () => {
             <i className="fab fa-github"></i>
           </li>
         </a>
-        <a
+        {/* <a
           href="https://codepen.io/oRaude"
           target="_blank"
           rel="noopener noreferrer"
@@ -52,7 +52,7 @@ const SocialMedia = () => {
           <li>
             <i className="fab fa-codepen"></i>
           </li>
-        </a>
+        </a> */}
       </ul>
     </div>
   );
