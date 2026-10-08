@@ -62,7 +62,7 @@ const Contact = () => {
                 <span className="text">je code des applis solides et jolies pour les yeux.</span>
               </p>
               <p className="hide">
-                <span className="text">Fan d'ergonomie et d'équipe!</span>
+                <span className="text">Fan d'ergonomie et d'équipe et de TEST!</span>
               </p>
             </div>
           </div>
