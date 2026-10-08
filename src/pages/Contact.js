@@ -47,7 +47,7 @@ const Contact = () => {
           <div className="presentation">
             <div className="presentation-text">
               <p className="hide">
-                <span className="text">Développeur web installé en Bretagne</span>
+                <span className="text">TEST - Développeur web installé en Bretagne</span>
               </p>
               <p className="hide">
                 <span className="text">après des années à Montréal.</span>
