@@ -24,6 +24,6 @@ jobs:
           echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
-          rsync -az --delete --exclude='.well-known' \
+          rsync -az --delete --exclude='.well-known' --exclude='.htaccess' \
             -e "ssh -p ${{ secrets.SSH_PORT }}" \
             build/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:domains/olivierraude.com/public_html/
