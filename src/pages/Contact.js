@@ -47,22 +47,19 @@ const Contact = () => {
           <div className="presentation">
             <div className="presentation-text">
               <p className="hide">
-                <span className="text">
-                  Développeur basé à Montréal.
-                </span>
+                <span className="text">Développeur web installé en Bretagne</span>
               </p>
               <p className="hide">
-                <span className="text">
-                  Je suis en veille constante sur les internets
-                </span>
+                <span className="text">après des années à Montréal.</span>
               </p>
               <p className="hide">
-                <span className="text">
-                  pour coder des applications aux animations
-                </span>
+                <span className="text">Je suis en veille constante sur les internets,</span>
               </p>
               <p className="hide">
-                <span className="text">fluides et jolies pour les yeux.</span>
+                <span className="text">du back-end aux animations fluides,</span>
+              </p>
+              <p className="hide">
+                <span className="text">je code des applis solides et jolies pour les yeux.</span>
               </p>
               <p className="hide">
                 <span className="text">Fan d'ergonomie et d'équipe!</span>
