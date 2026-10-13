@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" font-family="Inter, 'DejaVu Sans', Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#ff7a1a"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="1000" fill="#14161a"/>
+
+  <!-- Titre -->
+  <text x="80" y="95" fill="#ff7a1a" font-size="46" font-weight="700">Mini-rédac</text>
+  <text x="80" y="135" fill="#9aa0a8" font-size="22">Architecture · Symfony 8.1 · Docker</text>
+  <text x="1520" y="95" fill="#9aa0a8" font-size="18" text-anchor="end">En cours de développement</text>
+
+  <!-- Navigateur -->
+  <rect x="80" y="200" width="300" height="560" rx="16" fill="#1c1f25" stroke="#2e333b" stroke-width="2"/>
+  <text x="104" y="242" fill="#e8eaed" font-size="22" font-weight="700">Navigateur</text>
+  <rect x="104" y="270" width="252" height="120" rx="10" fill="#242830"/>
+  <text x="124" y="318" fill="#e8eaed" font-size="20" font-weight="600">Pages Twig</text>
+  <text x="124" y="348" fill="#9aa0a8" font-size="16">Lecture publique</text>
+  <rect x="104" y="410" width="252" height="120" rx="10" fill="#242830"/>
+  <text x="124" y="458" fill="#e8eaed" font-size="20" font-weight="600">Back-office</text>
+  <text x="124" y="488" fill="#9aa0a8" font-size="16">Rédaction et relecture</text>
+  <rect x="104" y="550" width="252" height="120" rx="10" fill="#242830" stroke="#ff7a1a" stroke-width="2"/>
+  <text x="124" y="598" fill="#e8eaed" font-size="20" font-weight="600">Widget React</text>
+  <text x="124" y="628" fill="#9aa0a8" font-size="16">« Les plus lus »</text>
+
+  <!-- Cadre Docker -->
+  <rect x="440" y="175" width="1080" height="625" rx="20" fill="none" stroke="#4a8fd8" stroke-width="2" stroke-dasharray="10 8"/>
+  <rect x="460" y="162" width="232" height="28" fill="#14161a"/>
+  <text x="470" y="184" fill="#4a8fd8" font-size="20" font-weight="700">Docker · OrbStack</text>
+
+  <!-- FrankenPHP / Symfony -->
+  <rect x="480" y="215" width="570" height="550" rx="14" fill="#1c1f25" stroke="#2e333b" stroke-width="2"/>
+  <text x="504" y="257" fill="#e8eaed" font-size="22" font-weight="700">FrankenPHP · Symfony 8.1</text>
+
+  <g font-size="19" font-weight="600" fill="#e8eaed">
+    <rect x="504" y="290" width="250" height="90" rx="10" fill="#242830"/>
+    <text x="524" y="330">Contrôleurs · Twig</text>
+    <text x="524" y="358" font-size="15" font-weight="400" fill="#9aa0a8">Routage, pages</text>
+
+    <rect x="504" y="400" width="250" height="90" rx="10" fill="#242830"/>
+    <text x="524" y="440">Security · Voter</text>
+    <text x="524" y="468" font-size="15" font-weight="400" fill="#9aa0a8">Rôles journaliste / éditeur</text>
+
+    <rect x="504" y="510" width="250" height="90" rx="10" fill="#242830"/>
+    <text x="524" y="550">API</text>
+    <text x="524" y="578" font-size="15" font-weight="400" fill="#9aa0a8">Lecture seule, JSON</text>
+
+    <rect x="776" y="290" width="250" height="90" rx="10" fill="#242830"/>
+    <text x="796" y="330">Doctrine ORM</text>
+    <text x="796" y="358" font-size="15" font-weight="400" fill="#9aa0a8">Entités, migrations</text>
+
+    <rect x="776" y="400" width="250" height="90" rx="10" fill="#242830"/>
+    <text x="796" y="440">Workflow</text>
+    <text x="796" y="468" font-size="15" font-weight="400" fill="#9aa0a8">Statuts des articles</text>
+
+    <rect x="776" y="510" width="250" height="90" rx="10" fill="#242830"/>
+    <text x="796" y="550">Messenger</text>
+    <text x="796" y="578" font-size="15" font-weight="400" fill="#9aa0a8">Traitements asynchrones</text>
+  </g>
+
+  <!-- Bande des statuts -->
+  <g font-size="17" font-weight="600">
+    <rect x="504" y="640" width="150" height="48" rx="24" fill="#2a2e36"/>
+    <text x="579" y="670" fill="#c9cdd3" text-anchor="middle">brouillon</text>
+    <line x1="660" y1="664" x2="692" y2="664" stroke="#ff7a1a" stroke-width="2.5" marker-end="url(#arr)"/>
+    <rect x="698" y="640" width="170" height="48" rx="24" fill="#2a2e36"/>
+    <text x="783" y="670" fill="#c9cdd3" text-anchor="middle">en relecture</text>
+    <line x1="874" y1="664" x2="906" y2="664" stroke="#ff7a1a" stroke-width="2.5" marker-end="url(#arr)"/>
+    <rect x="912" y="640" width="114" height="48" rx="24" fill="#ff7a1a"/>
+    <text x="969" y="670" fill="#14161a" text-anchor="middle">publié</text>
+  </g>
+  <text x="504" y="725" fill="#9aa0a8" font-size="15">Cycle de vie d'un article (composant Workflow)</text>
+
+  <!-- MySQL -->
+  <rect x="1090" y="215" width="400" height="320" rx="14" fill="#1c1f25" stroke="#2e333b" stroke-width="2"/>
+  <text x="1114" y="257" fill="#e8eaed" font-size="22" font-weight="700">MySQL 8</text>
+  <g font-size="18" font-weight="600" fill="#e8eaed" text-anchor="middle">
+    <rect x="1114" y="290" width="160" height="60" rx="10" fill="#242830"/>
+    <text x="1194" y="327">Rubrique</text>
+    <rect x="1306" y="290" width="160" height="60" rx="10" fill="#242830"/>
+    <text x="1386" y="327">User</text>
+    <rect x="1190" y="430" width="200" height="70" rx="10" fill="#242830" stroke="#ff7a1a" stroke-width="2"/>
+    <text x="1290" y="472">Article</text>
+  </g>
+  <line x1="1194" y1="350" x2="1250" y2="430" stroke="#9aa0a8" stroke-width="2"/>
+  <line x1="1386" y1="350" x2="1330" y2="430" stroke="#9aa0a8" stroke-width="2"/>
+  <text x="1176" y="400" fill="#9aa0a8" font-size="15">1 – n</text>
+  <text x="1366" y="400" fill="#9aa0a8" font-size="15">auteur</text>
+
+  <!-- MongoDB -->
+  <rect x="1090" y="565" width="400" height="200" rx="14" fill="#1c1f25" stroke="#2e333b" stroke-width="2"/>
+  <text x="1114" y="607" fill="#e8eaed" font-size="22" font-weight="700">MongoDB</text>
+  <text x="1114" y="645" fill="#c9cdd3" font-size="18">Statistiques de lecture</text>
+  <text x="1114" y="675" fill="#9aa0a8" font-size="16">Vues par article et par jour</text>
+  <text x="1114" y="700" fill="#9aa0a8" font-size="16">→ classement « Les plus lus »</text>
+
+  <!-- Flèches -->
+  <g stroke="#ff7a1a" stroke-width="2.5" fill="none" marker-end="url(#arr)">
+    <line x1="356" y1="335" x2="500" y2="335"/>
+    <line x1="356" y1="470" x2="500" y2="445"/>
+    <line x1="356" y1="600" x2="500" y2="560"/>
+    <line x1="1026" y1="335" x2="1086" y2="335"/>
+    <line x1="1026" y1="555" x2="1086" y2="610"/>
+  </g>
+  <text x="400" y="322" fill="#ff7a1a" font-size="15" font-weight="600">HTTPS</text>
+  <text x="392" y="618" fill="#ff7a1a" font-size="15" font-weight="600">JSON</text>
+
+  <!-- GitLab CI -->
+  <rect x="440" y="840" width="1080" height="90" rx="14" fill="#1c1f25" stroke="#2e333b" stroke-width="2"/>
+  <text x="470" y="894" fill="#e8eaed" font-size="22" font-weight="700">GitLab CI</text>
+  <g font-size="18" font-weight="600" fill="#c9cdd3">
+    <text x="680" y="893">PHPStan</text>
+    <text x="790" y="893" fill="#ff7a1a">→</text>
+    <text x="830" y="893">PHPUnit</text>
+    <text x="940" y="893" fill="#ff7a1a">→</text>
+    <text x="980" y="893">Build</text>
+  </g>
+  <text x="1490" y="893" fill="#9aa0a8" font-size="16" text-anchor="end">1 fonctionnalité = 1 branche + 1 MR</text>
+
+  <text x="80" y="880" fill="#9aa0a8" font-size="16">Dépôt GitLab</text>
+  <text x="80" y="906" fill="#9aa0a8" font-size="16">+ miroir GitHub</text>
+</svg>

@@ -89,22 +89,6 @@ const Nav = () => {
               >
                 <li>Projet 8</li>
               </NavLink>
-              <NavLink
-                to="/project-9"
-                exact
-                className="links-projects hover"
-                activeClassName="nav-active"
-              >
-                <li>Projet 9</li>
-              </NavLink>
-              <NavLink
-                to="/project-10"
-                exact
-                className="links-projects hover"
-                activeClassName="nav-active"
-              >
-                <li>Projet 10</li>
-              </NavLink>
             </ul>
           </li>
 

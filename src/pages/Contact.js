@@ -62,14 +62,14 @@ const Contact = () => {
                 <span className="text">je code des applis solides et jolies pour les yeux.</span>
               </p>
               <p className="hide">
-                <span className="text">Fan d'ergonomie et d'équipe et de TEST!</span>
+                <span className="text">Fan d'ergonomie et d'équipe!</span>
               </p>
             </div>
           </div>
           <PhoneGif />
           {/* <IsoCards /> */}
           <SocialMedia />
-          <ScrollButton left="/project-8" />
+          <ScrollButton left="/project-10" />
         </motion.div>
       </AnimatePresence>
     </main>

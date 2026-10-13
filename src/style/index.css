@@ -102,11 +102,6 @@ i:hover {
      -moz-user-select: none;
           user-select: none;
   width: 100%;
-  /* @supports (-moz-appearance:none) {
-          &--text { 
-              font-size: 3.43vw;
-           } 
-      } */
 }
 .home .title .hide {
   background: #001b2e;
@@ -139,6 +134,13 @@ i:hover {
      -moz-user-select: none;
           user-select: none;
   width: 100%;
+}
+.home .title {
+  /* @supports (-moz-appearance:none) {
+          &--text { 
+              font-size: 3.43vw;
+           } 
+      } */
 }
 @-moz-document url-prefix() {
   .home .title--text {
@@ -173,7 +175,7 @@ i:hover {
   display: grid;
   grid-template-columns: 30% 60% 5%;
   position: relative;
-  text-align: right;
+  text-align: left;
 }
 @media screen and (max-width: 768px) {
   .project-main {
@@ -287,6 +289,10 @@ i:hover {
     margin-top: 2em;
   }
 }
+.img-container:hover img {
+  transform: scale(1.2);
+  filter: opacity(5%) contrast(150%);
+}
 .img-container:hover span,
 .img-container span:hover {
   visibility: visible;
@@ -304,22 +310,20 @@ i:hover {
   transition: 0.4s ease-out;
   position: relative;
 }
-.img-container img:hover,
-.img-container img span:hover img {
-  transform: scale(1.2);
-  filter: opacity(10%) contrast(150%);
-}
 .img-container span {
   position: absolute;
   bottom: 20px;
-  right: 0;
-  width: 50%;
-  padding: 1rem;
+  left: 0;
+  width: 80%;
+  padding: 1rem 2rem;
   margin: 0 auto;
   line-height: 34px;
   font-size: 1.5rem;
   visibility: hidden;
   transition: translateY(200px);
+  max-height: calc(100% - 40px);
+  overflow-y: auto;
+  z-index: 2;
 }
 @media screen and (max-width: 480px) {
   .img-container span {
@@ -331,6 +335,30 @@ i:hover {
 .img-container span h3 {
   padding-bottom: 10px;
   color: #e57a44;
+}
+.img-container span .para strong {
+  color: #e57a44;
+  font-weight: 700;
+}
+.img-container span .para p {
+  margin-bottom: 1em;
+}
+.img-container span .para ul {
+  list-style: disc !important;
+  padding-left: 1.25rem;
+  margin: 0.5rem 0 1rem;
+}
+.img-container span .para li {
+  margin-bottom: 0.35rem;
+}
+.img-container span .para li::marker {
+  color: var(--accent, currentColor); /* optionnel */
+}
+.img-container span .para ins {
+  font-weight: 600 !important;
+  text-decoration: underline;
+  text-decoration-color: var(--accent, currentColor);
+  text-underline-offset: 3px;
 }
 .img-container span p {
   margin-bottom: 30px;
@@ -397,8 +425,7 @@ i:hover {
   transition: top 160ms ease-out;
   transition: left 160ms ease-out;
   z-index: 20;
-  -webkit-backdrop-filter: brightness(115%);
-          backdrop-filter: brightness(115%);
+  backdrop-filter: brightness(115%);
 }
 .cursor.hovered {
   width: 30px;
@@ -472,7 +499,7 @@ i:hover {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  border: 90px solid #d85c1e;
+  border: 90px solid rgb(215.9718309859, 92.3943661972, 30.0281690141);
   position: absolute;
   z-index: 5;
   top: 50%;

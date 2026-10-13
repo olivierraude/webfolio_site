@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { projectsData } from "../data/projectsData";
 import { motion } from "framer-motion";
+import Markdown from "markdown-to-jsx/react";
 
 const Project = (props) => {
   const [currentProject] = useState(projectsData);
@@ -75,7 +76,19 @@ const Project = (props) => {
         <div className="img-container">
           <span>
             <h3>{project.titre}</h3>
-            <p className="para">{project.description}</p>
+            <Markdown
+              className="para"
+              options={{
+                forceBlock: true,
+                forceWrapper: true,
+                wrapper: "div",
+                overrides: {
+                  a: { props: { target: "_blank", rel: "noopener noreferrer" } },
+                },
+              }}
+            >
+              {project.description}
+            </Markdown>
           </span>
           <img
             src={project.image}
@@ -88,22 +101,12 @@ const Project = (props) => {
       </motion.div>
       <div className="project-links">
         <ul className="content">
-          <a
-            href={project.lien}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover"
-          >
+          <a href={project.lien} target="_blank" rel="noopener noreferrer" className="hover">
             <li>
               <i className="fas fa-globe"></i>
             </li>
           </a>
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover"
-          >
+          <a href={project.github} target="_blank" rel="noopener noreferrer" className="hover">
             <li>
               <i className="fab fa-github"></i>
             </li>
