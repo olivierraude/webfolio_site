@@ -21,7 +21,7 @@ export const projectsData = [
     alternative: "copie d'écran de la page d'accueil du projet Art Massif",
     width: "1920",
     height: "950",
-    github: "https://github.com/olivierraude/wordpress-tybirill",
+    github: "https://gitlab.com/olivier-group4913941/telegram-redaction",
   },
   {
     id: 2,
